@@ -15,11 +15,11 @@ const RouterSwitch = () => {
     return(
         <Container>
         <Switch>
-            <Route exact path='/' render={() => <UserPage />} />
-            <Route path='/study/:studyid' render={(matchProps) => <StudyPage {...matchProps}/>} />
-            <Route exact path='/participant' render={() => <ParticipantPage />} />
-            <Route path='/participant/add/:studyid' render={(matchProps) => <AddParticipant {...matchProps} />} />
-            <Route path='/login' render={() => <Login />} />
+            <Route exact path='/stats-dashboard' render={() => <UserPage />} />
+            <Route path='/stats-dashboard/study/:studyid' render={(matchProps) => <StudyPage {...matchProps}/>} />
+            <Route exact path='/stats-dashboard/participant' render={() => <ParticipantPage />} />
+            <Route path='/stats-dashboard/participant/add/:studyid' render={(matchProps) => <AddParticipant {...matchProps} />} />
+            <Route path='/stats-dashboard/login' render={() => <Login />} />
         </Switch>
         </Container>
     );

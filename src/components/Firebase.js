@@ -1,7 +1,8 @@
 import * as firebase from 'firebase/app';
+import { API_KEY } from '../../apiConfig';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD6hs3mo2Xhj2XLN5Xy75A-GVQLnIbBXZo",
+    apiKey: API_KEY,
     authDomain: "cough-detection.firebaseapp.com",
     databaseURL: "https://cough-detection.firebaseio.com/",
   }
